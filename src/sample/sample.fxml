@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: #EDF6E4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="42.0" prefWidth="700.0" style="-fx-background-color: #1C5450;">
+         <children>
+            <Label fx:id="labelApp" layoutX="205.0" layoutY="12.0" prefHeight="19.0" prefWidth="286.0" text="Нормализация Венгерским методом" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelSizeMatrix" layoutX="117.0" layoutY="67.0" text="Введите размер матрицы:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sizeMatrix" layoutX="163.0" layoutY="99.0" prefHeight="25.0" prefWidth="76.0" />
+      <Label fx:id="labelArea" layoutX="144.0" layoutY="142.0" text="Введите матрицу:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textArea" layoutX="100.0" layoutY="175.0" prefHeight="200.0" prefWidth="200.0" />
+      <RadioButton fx:id="radioMax" layoutX="223.0" layoutY="404.0" mnemonicParsing="false" selected="true" text="Максимизация">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioMin" layoutX="358.0" layoutY="404.0" mnemonicParsing="false" text="Минимизация">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="buttonRes" layoutX="284.0" layoutY="464.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" text="Результат">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="purpose" layoutX="462.0" layoutY="99.0" prefHeight="25.0" prefWidth="76.0" />
+      <Label fx:id="labelPurpose" layoutX="460.0" layoutY="67.0" text="Назначение:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAreaRes" layoutX="468.0" layoutY="142.0" text="Результат:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textAreaResult" layoutX="407.0" layoutY="175.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
