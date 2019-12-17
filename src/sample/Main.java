@@ -13,6 +13,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Нормализация Венгерским методом");
         primaryStage.setScene(new Scene(root, 700, 700)); //550
+        primaryStage.setScene(new Scene(root, 330, 330)); //550
         primaryStage.show();
     }
 
